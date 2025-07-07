@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Function Basics</title>
+    </head>
+    <body>
+        <h1>JS Function Basics "TOP"</h1>
+        <p>This Page runs the functions from the lesson "Function Basics" of TOP in a script tag</p>
+
+        <script>
+            let add7 = (n) => n+7;
+            console.log(add7(7));
+            let multiply = function(n1, n2) { return n1 * n2};
+            console.log(multiply(2,4));
+            function capitalize(str) {
+                str = String(str);
+                str = str.toLowerCase();
+                ltr1 =  str[0].toUpperCase();
+                return ltr1 + str.slice(1);
+            }
+            console.log(capitalize("hI my nAmE iS wriTTen Lower casE"));
+            let lastLetter = (str) => {
+                return str[str.length-1];
+            }
+            console.log(lastLetter("abcdefg"));
+        </script>
+    </body>
+</html>
